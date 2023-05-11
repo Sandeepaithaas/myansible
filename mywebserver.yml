@@ -19,7 +19,7 @@
    yum:
      name: httpd
      state: present
-  wnen: ansible_os_family =="redhat"
+  when: ansible_os_family =="redhat"
 
   -name: i want to start webserver on redhat
    service: 
