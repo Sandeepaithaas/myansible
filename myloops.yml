@@ -2,7 +2,7 @@
 - hosts: 172.31.40.227
   become: yes
   tasks: 
-  - name: i want executemulti package
+  - name: i want execute multi package
     apt:
       name: "{{item}}"
       state: present
@@ -10,5 +10,6 @@
       -git
       -tree
       -wget
+      
 
 
