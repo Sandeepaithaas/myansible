@@ -7,4 +7,9 @@
      name: "{{myjavapackonubuntu}}"
      state: present
     when: ansible_os_family =="debian"
-    
+  -name: install java on redha node
+   yum:
+   name: "{{java-1.8.0-openjdk}}"
+   state: present
+  when: ansible_os_family ="redhat"
+ 
