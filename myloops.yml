@@ -3,7 +3,7 @@
   become: yes
   tasks: 
   - name: i want execute multo package
-    apt:
+    apt: 
       name: "{{item}}"
       state: present
     loops:
