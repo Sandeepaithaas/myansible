@@ -13,6 +13,5 @@
     apt:
      name: apache2
      static: present
-      
 
   
