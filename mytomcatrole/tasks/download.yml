@@ -1,0 +1,21 @@
+---
+- name: download tomcat tar file
+  get_url:
+    url: https://archive.apache.org/dist/tomcat/tomcat-10/v10.0.20/bin/apache-tomcat-10.0.20.tar.gz
+    dest: /home/ubuntu/apache-tomcat-10.0.20.tar.gz
+    force_basic_auth: yes
+
+
+
+- name: creat a folder
+  file:
+    path: /opt/tomcat
+    state: directory
+
+
+
+#ifyou execute linnux command directly, as admin ,we are to provide IDEMPOTENTS
+- name: extract tomcat tar file
+  command: 
+      cmd: sudo tar xzvf apache-tomcat-10*tar.gz -C /opt/tomcat --strip-components=1
+      creaters: /opt/tomcat/NOTICE

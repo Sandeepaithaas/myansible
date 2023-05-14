@@ -1,0 +1,11 @@
+--- 
+- name: update packages
+  apt:
+    update_cache: yes
+
+- name: install open jdk
+  apk: 
+   name: install openjdk-8-jdk
+   state: preasent
+
+
