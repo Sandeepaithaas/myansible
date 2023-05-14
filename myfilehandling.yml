@@ -14,4 +14,10 @@
      name: apache2
      static: present
 
+  - name: copy dynamic file into node side
+    template:
+      src: myindexfile.j2
+      dest: /var/www/html/index.html
+
+
   
