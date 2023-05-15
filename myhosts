@@ -6,14 +6,5 @@
 [myappservers]
 172.31.46.225
 
-[myDBservers]
-172.31.40.1
-172.31.5.5
 
-[testgroup]
-server01 java8
-server02 java8
-server03 java8
-server04 java11
-server05 java8
 
